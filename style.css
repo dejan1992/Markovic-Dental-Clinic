@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap');
+
+:root{
+  --primary-color: #09ac60;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+h1,h2{
+  line-height: 1.2;
+  margin: 10px 0;
+  font-weight: 300;
+ }
+
+p{
+  margin: 10px 0;
+}
+
+img{
+  width: 100%;
+}
+
+.btn{
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+
+.btn-secundary{
+background: transparent;
+border: 1px solid #fff;
+}
+
+.btn:hover{
+  transform: scale(0.97);
+}
+
+.icon{
+  color: var(--primary-color);
+}
+
+.navbar .logo{
+font-size: 30px;
+ }
+
+/* Navbar */
+
+.navbar{
+background: var(--primary-color);
+color: #fff;
+height: 70px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.container{
+  max-width: 1100px;
+  padding: 0 40px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar a{
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar li a:hover{
+  border-bottom: 2px solid #fff;
+}
+
+/* Showcase */
+
+.showcase{
+  height: 600px;
+  /* background: var(--primary-color); */
+  background-image: linear-gradient(#00000086,rgba(0, 0, 0, 0.7)) , url(img/background.jpg);
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+ 
+   /*  .showcase::after{
+  content: "";
+  position: absolute;
+  height: 70px;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+  background-color: var(--primary-color); 
+transform: skewY(-1.5deg);
+  -webkit-transform: skewY(-1.5deg);
+  -moz-transform: skewY(-1.5deg);
+  -ms-transform: skewY(-1.5deg); 
+}*/
+
+
+.showcase h1{
+  font-size: 50px;
+}
+
+.showcase p{
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: visible;
+  /* border-top:1px solid rgba(0, 0, 0, 0.2); */
+}
+
+ .showcase-contact{
+  position: relative;
+  top: 80px;
+  width:400px;
+  padding: 30px;
+  justify-content: flex-end;
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-contact h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.showcase-contact p{
+  margin:0;
+}
+.showcase-contact i{
+  margin:20px 0 0 0;
+}
+
+.contact-box{
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Services */
+
+.services{
+  margin-top: 140px;
+}
+.services .flex{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+.services-boxes{
+width: 100%;
+padding: 20px 30px;
+}
+
+.service-box{
+  min-width: 300px;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  padding: 15px;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+
+.service-box:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.services h2{
+    color: var(--primary-color);
+}
+.services p{
+    font-size: 1.2rem;
+}
+
+.services img{
+  width: 50px;
+}
+
+/* About */
+
+.about .grid{
+  color: #fff;
+  /* background: url(img/lesly-juarez-1AhGNGKuhR0-unsplash.jpg); */
+    background-image: linear-gradient(#00000086,rgba(0, 0, 0, 0.7)) , url(img/male-dentist-female-patient.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: repeat(2,1fr);
+  padding: 70px;
+}
+
+
+.about h1{
+  font-size: 40px;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+.about p{
+  font-size: 1.5rem;
+}
+
+ .about ul{
+  list-style: disc;
+  font-size: 1.5rem;
+  margin-left:20px ;
+} 
+
+
+/* Testimonials */
+
+.testimonials{
+  background: var(--primary-color);
+  padding: 20px;
+}
+
+
+.testimonial-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.testimonial{
+  background: #fff;
+  border-radius: 5px;
+  min-width: 350px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.testimonials img{
+  border-radius:50%;
+  width: 150px;
+}
+
+.testimonial .testimonial-text{
+  margin-left: 20px;
+
+}
+
+.testimonials span{
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Form */
+.form{
+  text-align: center;
+}
+
+.form .form-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color:var(--primary-color);
+}
+
+.form input{
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid rgb(146, 146, 146);
+  margin: 10px;
+  width: 300px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form textarea{
+  resize: none;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid rgb(146, 146, 146);;
+  margin: 10px;
+  width: 300px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form input[type=submit]{
+width: 620px;
+background: var(--primary-color);
+color: #fff;
+}
+
+.form input[type=submit]:hover{
+  background: #068f4f;
+  }
+
+
+/* Staff */
+.staff{
+  margin-bottom: 30px;
+}
+.staff .flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.staff h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color:var(--primary-color);
+}
+
+.doctor1{
+  background: url(img/doctors/doctor\ 2.jpg) no-repeat center center/cover;
+  width: 400px;
+  height:550px;
+}
+.doctor2{
+  background: url(img/doctors/doctor\ 4.jpg) no-repeat center center/cover;
+  width: 400px;
+  height:550px;
+}
+.doctor3{
+  background: url(img/doctors/doctor\ 1.jpg) no-repeat top center/cover;
+  width: 400px;
+  height:550px;
+}
+.doctor4{
+  background: url(img/doctors/doctor\ 3.jpg) no-repeat center center/cover;
+  width: 400px;
+  height:550px;
+}
+
+.staff .box{
+  border-bottom: 1px solid var(--primary-color);
+  width: 400px;
+  margin: 30px;
+}
+
+.staff h2{
+  color: var(--primary-color);
+  padding: 20px 0 0 20px;
+}
+
+.staff h3{
+  padding-left: 20px;
+}
+
+.staff p{
+  padding: 0 20px;
+}
+
+
+/* Q&A */
+
+#q-a{
+  overflow-y: hidden;
+  background-image: linear-gradient(#00000086,rgba(0, 0, 0, 0.6)) , url(img/toothbrush.jpg);
+}
+
+.accordion{
+  width: 100%;
+}
+
+.accordion-title{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+
+.accordion .accordion-content{
+position: relative;
+margin: 10px 20px;
+}
+
+.accordion .accordion-content .heading{
+  font-size: 1.1rem;
+  color: #fff;
+  position: relative;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion .accordion-content .heading::before{
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.accordion .accordion-content .answer{
+position: relative;
+background:var(--primary-color);
+color: #fff;
+height: 0;
+overflow: hidden;
+transition: 0.5s;
+}
+
+.accordion .accordion-content.active .answer {
+height: 120px;
+padding: 10px;
+}
+
+.accordion .accordion-content.active .heading::before{
+  content: "-";
+}
+
+
+/* Footer */
+.footer{
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer a{
+  color: #fff;
+}
+
+
+.footer .footer-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer .social a{
+  margin: 0 10px;
+}
+
+.footer ul li a:hover{
+  color: #068f4f;
+}
+
+/* Tablets and under */
+@media(max-width: 1010px){
+.grid,
+.about .grid,
+.testimonial-grid,
+.c-grid{
+  grid-template-columns: 1fr;
+}
+
+.showcase{
+  height: auto;
+}
+.showcase-text{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.showcase-contact{
+  justify-self: center;
+  margin: auto;
+}
+.form .form-container{
+  flex-direction: column;
+}
+
+.form textarea{
+  align-self: center;
+  height: 300px;
+}
+.form input{
+  align-self: center;
+  width: 300px;
+}
+
+.form input[type=submit]{
+width: 300px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width: 500px){
+.navbar{
+  padding-top: 10px;
+  height: auto;
+}
+
+.flex{
+  flex-direction: column;
+}
+
+.navbar ul{
+  flex-direction: column;
+  text-align: center;
+}
+.navbar ul li{
+  margin: 5px 0;
+}
+
+.showcase-contact{
+  width:300px;
+}
+
+.testimonials .testimonial-text{
+  margin-top: 10px;
+
+}
+
+.about .grid{
+  gap: 10px;
+  padding: 0 50px 50px 50px;
+}
+.about p{
+  font-size: 1.2rem;
+}
+
+ .about ul{
+  font-size: 1.2rem;
+} 
+
+.form textarea{
+  height: 200px;
+  width: 100%;
+  
+}
+.form input{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.form input[type=submit]{
+width: 100%;
+}
+
+ .staff .container{
+  margin: auto ;
+  padding: 0 ;
+} 
+
+.staff .doctor1,
+.staff .doctor2,
+.staff .doctor3,
+.staff .doctor4{
+  width: 300px;
+}
+.staff .box{
+ width: 300px;
+}
+
+.accordion .accordion-content.active .answer {
+  height: auto;
+  }
+
+.footer{
+
+  padding: 20px 20px;
+}
+
+.footer h1{
+  font-size: 1.2rem;
+}
+
+.footer i{
+  margin-top: 10px;
+}
+}
