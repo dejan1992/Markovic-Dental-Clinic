@@ -117,21 +117,6 @@ height: 70px;
   color: #fff;
   position: relative;
 }
- 
-   /*  .showcase::after{
-  content: "";
-  position: absolute;
-  height: 70px;
-  bottom: -50px;
-  right: 0;
-  left: 0;
-  background-color: var(--primary-color); 
-transform: skewY(-1.5deg);
-  -webkit-transform: skewY(-1.5deg);
-  -moz-transform: skewY(-1.5deg);
-  -ms-transform: skewY(-1.5deg); 
-}*/
-
 
 .showcase h1{
   font-size: 50px;
@@ -311,6 +296,7 @@ padding: 20px 30px;
 
 /* Form */
 .form{
+  font-family:Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -339,6 +325,7 @@ padding: 20px 30px;
 }
 
 .form textarea{
+  font-family: inherit;
   resize: none;
   font-size: 1rem;
   padding: 10px;
